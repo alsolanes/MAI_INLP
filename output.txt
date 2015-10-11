@@ -1,0 +1,9 @@
+Hello hello NN 1
+world world NN 1
+, , Fc 1
+how how WRB 1
+'s be VBZ 0.5
+it it PRP 1
+going go VBG 1
+? ? Fit 1
+
