@@ -1,6 +1,6 @@
 import subprocess
 
-# Tokenize a file with a list of properties (word, phonetic pronunciation, lemma, tag). By default considers the input to be in English, but if specified as a parameter can be set to another language like spanish('es')"
+# Tokenize a file with a list of properties (word, lemma, category of the word, probability assignment). By default considers the input to be in English, but if specified as a parameter can be set to another language like spanish('es')"
 def tokenize_file(path_to_file, lang='en'):
     p = subprocess.Popen('analyze -f ' + lang + '.cfg <'+path_to_file+'', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     return to_list(p)
@@ -49,8 +49,10 @@ def to_list(p):
             for item in line.split(' '):
                 a = item.split('\n')[0]
                 if a is not ' ':
+                    print 'item ' + a
+                    print a is ' '
                     aux.append(a)
-            
             res.append(aux)  
     return res
             
+print tokenize_file('input_es.txt')
