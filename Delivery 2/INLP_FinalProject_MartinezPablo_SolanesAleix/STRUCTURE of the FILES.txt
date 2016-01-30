@@ -1,0 +1,12 @@
+Authors: Aleix Solanes and Pablo Martínez
+Subject: Introduction to Natural Language Processing
+
+This delivery is structured by folders as follows:
+- Folder "data" : contains the datasets used in the project
+- Folder "doc"  : contains the document explaining all the work done in this project
+- Folder "lib"  : contains the code used created by other colleagues in the first delivery
+- Folder "scripts": contains the main code file called "main.py", as well as the output datafile with our queries solved "OutFile.xml"
+
+Prerequisites:
+In order to execute the full code, the package "SPARQLWRAPPER" must be installed. If when the main executes the only option to execute is
+the one that refers to calculating the results by checking the OutFile and the Train dataset, it is not necessary.
